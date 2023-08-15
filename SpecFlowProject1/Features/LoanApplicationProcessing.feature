@@ -1,4 +1,5 @@
-﻿Feature: LoanApplicationProcessing
+﻿@loanApplicationProcessing
+Feature: LoanApplicationProcessing
   As a loan application back office employee
   I want to be able to process incoming loan requests
   So we can communicate the results to our customer in a timely manner

@@ -21,12 +21,14 @@ namespace SpecFlowProject1.Features
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
     [NUnit.Framework.DescriptionAttribute("LoanApplicationProcessing")]
+    [NUnit.Framework.CategoryAttribute("loanApplicationProcessing")]
     public partial class LoanApplicationProcessingFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-        private static string[] featureTags = ((string[])(null));
+        private static string[] featureTags = new string[] {
+                "loanApplicationProcessing"};
         
 #line 1 "LoanApplicationProcessing.feature"
 #line hidden
@@ -82,7 +84,7 @@ namespace SpecFlowProject1.Features
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiple pending loan applications for a customer can be approved at once", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 6
+#line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -108,10 +110,10 @@ this.ScenarioInitialize(scenarioInfo);
                             "John",
                             "1000",
                             "Submitted"});
-#line 7
+#line 8
  testRunner.Given("the loan application workload contains the following applications:", ((string)(null)), table1, "Given ");
 #line hidden
-#line 12
+#line 13
  testRunner.When("the loan applications for Susan are approved", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
@@ -130,7 +132,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "John",
                             "1000",
                             "Submitted"});
-#line 13
+#line 14
  testRunner.Then("the loan application workload contains the following applications:", ((string)(null)), table2, "Then ");
 #line hidden
             }

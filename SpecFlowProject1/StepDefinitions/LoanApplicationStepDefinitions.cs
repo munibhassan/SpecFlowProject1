@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using System;
 using TechTalk.SpecFlow;
 
@@ -18,16 +19,30 @@ namespace SpecFlowProject1.StepDefinitions
 
         }
 
-        [Then(@"the loan application is (approved | denied)")]
-        public void ThenTheLoanApplicationIsApproved()
-        {
+        //[Then(@"the loan application is (approved | denied)")]
+        //public void ThenTheLoanApplicationIsApproved()
+        //{
 
-        }
+        //}
 
         [When(@"their monthly income is (.*)")]
         public void WhenTheirMonthlyIncomeIs(int p0)
         {
 
         }
+
+        [Then(@"the loan application is approved")]
+        public void ThenTheLoanApplicationIsApproved()
+        {
+           // throw new PendingStepException();
+        }
+
+        [Then(@"the loan application is denied")]
+        public void ThenTheLoanApplicationIsDenied()
+        {
+            Assert.Fail();
+           // throw new PendingStepException();
+        }
+
     }
 }
